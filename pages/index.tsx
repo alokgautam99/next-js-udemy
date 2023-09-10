@@ -37,7 +37,7 @@ export default function Home() {
         height: "100vh",
       }}
     >
-      <Message>Hello Damini,</Message>
+      <Message>Hello Abha,</Message>
       <Wrapper>
         <Message>Good Morning</Message>
         <Message>You're looking beautiful today</Message>
