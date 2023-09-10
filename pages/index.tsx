@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import bgImage from "../assets/images/rose-bg.jpeg";
+import { mediaQuery } from "@/styledConstants";
 
 const Container = styled.div`
   background-image: url("../assets/images/rose-bg.jpeg");
@@ -12,12 +13,18 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  ${mediaQuery.uptoMobile}{
+    gap: 20px;
+  }
 `;
 
 const Message = styled.div`
   font-size: 50px;
   font-weight: 700;
   color: #fff;
+  ${mediaQuery.uptoMobile}{
+    font-size: 30px;
+  }
 `;
 
 export default function Home() {
