@@ -20,5 +20,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.11.0"
   }
 }
