@@ -37,7 +37,7 @@ export default function Home() {
         height: "100vh",
       }}
     >
-      <Message>Hello Abha,</Message>
+      <Message>Hello Alok,</Message>
       <Wrapper>
         <Message>Good Morning</Message>
         <Message>You're looking beautiful today</Message>
