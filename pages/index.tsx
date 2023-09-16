@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import bgImage from "../assets/images/rose-bg.jpeg";
 import { mediaQuery } from "@/styledConstants";
+import Head from "next/head";
 
 const Container = styled.div`
   background-image: url("../assets/images/rose-bg.jpeg");
@@ -14,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  ${mediaQuery.uptoMobile}{
+  ${mediaQuery.uptoMobile} {
     gap: 20px;
   }
 `;
@@ -23,12 +24,16 @@ const Message = styled.div`
   font-size: 50px;
   font-weight: 700;
   color: #fff;
-  ${mediaQuery.uptoMobile}{
+  ${mediaQuery.uptoMobile} {
     font-size: 30px;
   }
 `;
 
-export default function Home() {
+interface HomeProps {
+  data: string;
+}
+
+const Home = () => {
   return (
     <Container
       style={{
@@ -44,4 +49,6 @@ export default function Home() {
       </Wrapper>
     </Container>
   );
-}
+};
+
+export default Home;
